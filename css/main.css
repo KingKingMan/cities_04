@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
 
 * {
     box-sizing: border-box;
@@ -8,34 +8,156 @@
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 a:hover {
     text-decoration: underline;
 }
 
-body {
-    font-family: 'Noto Sans KR', sans-serif;
-}
-
 ul {
     list-style: none;
 }
 
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+    color: #333;
+}
 
 .head {}
 
-h1 {
+.head h1 {
     font-size: 50px;
+    color: #111;
+    padding: 20px;
+    height: 160px;
+    display: flex;
+    align-items: center;
     justify-content: center;
-    width: 1000px;
-    margin: 0 auto;
-    text-align: center;
-    color: #222;
 }
-
-
 
 .nav {
-    display: inline-block
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
 }
+
+.nav ul {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+}
+
+.nav ul li a {
+    display: block;
+    height: 70px;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+
+.container {
+    width: 1000px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.container ul {
+    margin-bottom: 100px;
+}
+
+.container .text h2 {
+    font-weight: 700;
+}
+
+/* item_01 */
+.container .item_01 li {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 30px;
+}
+
+.container .item_01 h2 {
+    margin-bottom: 20px;
+}
+
+.container .item_01 .text {
+    line-height: 1.6;
+}
+
+/* item_02 */
+.container .item_02 {
+    display: flex;
+    justify-content: space-between
+}
+
+.container .item_02 li {
+    width: 300px;
+}
+
+.container .item_02 h2 {
+    margin: 16px 0;
+}
+
+/* item_03 */
+.container .item_03 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .item_03 .photo {
+    width: 240px;
+    height: 240px;
+    background-color: #ddd;
+    margin: 0 auto;
+    border-radius: 240px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.container .item_03 .photo.photo_01 {
+    background-image: url("../images/london_b.jpg");
+}
+
+.container .item_03 .photo.photo_02 {
+    background-image: url("../images/paris_b.jpg");
+}
+
+.container .item_03 .photo.photo_03 {
+    background-image: url("../images/tokyo_b.jpg");
+}
+
+.container .item_03 .text {
+    width: 300px;
+    text-align: center;
+}
+
+.container .item_03 .text h2 {
+    margin: 16px;
+}
+
+/* subpage */
+.container h3 {
+    padding: 25px 0;
+    font-size: 32px;
+}
+
+.container .photo img {
+    width: 100%;
+}
+
+
+/* bottom */
+.bottom {
+    height: 160px;
+    padding: 20px;
+    font-size: 14px;
+    color: #666;
+    border-top: 1px solid #ddd;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+} 
